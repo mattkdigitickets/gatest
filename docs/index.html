@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GA Test Page</title>
+    <script>
+    window['ga-disable-UA-17567200-13'] = true;
+      
+    (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      
+     ga('create', 'UA-17567200-13', 'auto', {'name': 'testTracker', 'allowLinker': true});
+      
+     ga('set', 'anonymizeIp', false);
+      
+     ga(function () {
+            var trackers = ga.getAll();
+            for (var i = 0; i < trackers.length; i++) {
+
+                var trackerName = trackers[i].get('name');
+                // track page view
+                ga(trackerName + '.send', 'pageview');
+            }
+        });
+    </script>
+  </head>
+  <body>
+<pre>
+
+  /$$$$$$                      /$$             /$$     /$$                           /$$$$$$$$                    /$$    
+ /$$__  $$                    | $$            | $$    |__/                          |__  $$__/                   | $$    
+| $$  \ $$ /$$$$$$$   /$$$$$$ | $$ /$$   /$$ /$$$$$$   /$$  /$$$$$$$  /$$$$$$$         | $$  /$$$$$$   /$$$$$$$ /$$$$$$  
+| $$$$$$$$| $$__  $$ |____  $$| $$| $$  | $$|_  $$_/  | $$ /$$_____/ /$$_____/         | $$ /$$__  $$ /$$_____/|_  $$_/  
+| $$__  $$| $$  \ $$  /$$$$$$$| $$| $$  | $$  | $$    | $$| $$      |  $$$$$$          | $$| $$$$$$$$|  $$$$$$   | $$    
+| $$  | $$| $$  | $$ /$$__  $$| $$| $$  | $$  | $$ /$$| $$| $$       \____  $$         | $$| $$_____/ \____  $$  | $$ /$$
+| $$  | $$| $$  | $$|  $$$$$$$| $$|  $$$$$$$  |  $$$$/| $$|  $$$$$$$ /$$$$$$$/         | $$|  $$$$$$$ /$$$$$$$/  |  $$$$/
+|__/  |__/|__/  |__/ \_______/|__/ \____  $$   \___/  |__/ \_______/|_______/          |__/ \_______/|_______/    \___/  
+                                   /$$  | $$                                                                             
+                                  |  $$$$$$/                                                                             
+                                   \______/                                                                              
+</pre>
+  </body>
+</html>
